@@ -1,7 +1,7 @@
 name: amap_flutter_tools
-description: flutter amap plugin
+description: a flutter amap plugin
 version: 0.0.1
-homepage:
+homepage: https://github.com/1272416334/amap_flutter_tools
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
