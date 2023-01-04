@@ -23,12 +23,7 @@ platform-specific implementation code for Android and/or iOS.
      url: https://github.com/1272416334/amap_flutter_tools  
      ref: main  
 ### 2、在项目目录下的android/app/build.gradle文件中的dependencies添加以下代码： 
-dependencies  
-{  
-     ...  
-     implementation 'com.amap.api:navi-3dmap:latest.integration'   
-     ...  
-}  <br>
+#### implementation 'com.amap.api:navi-3dmap:latest.integration'   
 ### 3、在android/app/src/main/AndroidManifest.xml，application标签内添加以下代码：  <br>
 ### 不注册activity无法使用，还未深入接触安卓原生，不明原因，后期可能会修改  
 <!--     注册activity-->  <br>
