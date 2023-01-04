@@ -25,20 +25,20 @@ platform-specific implementation code for Android and/or iOS.
 2、在项目目录下的android/app/build.gradle文件中的dependencies添加以下代码：  
 dependencies  
 {  
-    ### ...  
-    ### implementation 'com.amap.api:navi-3dmap:latest.integration'   
-    ### ...  
+     ...  
+     implementation 'com.amap.api:navi-3dmap:latest.integration'   
+     ...  
 }  
 3、在android/app/src/main/AndroidManifest.xml 中添加以下代码：  
 ### 不注册activity无法使用，还未深入接触安卓原生，不明原因，后期可能会修改  
 <!--     注册activity-->  
-### <application>  
-    ### ...  
-    ### <activity android:name="com.amap_flutter_tools.activity.EmulatorActivity"/>  
-    ### <activity android:name="com.amap_flutter_tools.activity.BaseActivity"/>  
-    ### <activity android:name="com.amap_flutter_tools.activity.CustomAmapRouteActivity"/>  
+ '<application>'  
     ...  
-### </application>  
+     '<activity android:name="com.amap_flutter_tools.activity.EmulatorActivity"/>'
+     '<activity android:name="com.amap_flutter_tools.activity.BaseActivity"/>'  
+     '<activity android:name="com.amap_flutter_tools.activity.CustomAmapRouteActivity"/>'  
+    ...  
+ '</application>'  
 
 
 For help getting started with Flutter development, view the
