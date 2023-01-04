@@ -15,16 +15,16 @@ platform-specific implementation code for Android and/or iOS.
 
 ## 开始使用
 
-### github版引入项目
+### github版引用插件
 
-### 1、在flutter项目目录下的pubspec.yaml中添加以下代码: 
+### 1、在flutter项目目录下的pubspec.yaml中添加以下代码引用插件: 
      amap_flutter_tools:  
      git:  
      url: https://github.com/1272416334/amap_flutter_tools  
      ref: main  
-### 2、在项目目录下的android/app/build.gradle文件中的dependencies添加以下代码： 
+### 2、在项目目录下的android/app/build.gradle文件中的dependencies添加以下代码引用导航库： 
 #### implementation 'com.amap.api:navi-3dmap:latest.integration'   
-### 3、在android/app/src/main/AndroidManifest.xml，application标签内添加以下代码：  <br>
+### 3、在android/app/src/main/AndroidManifest.xml，application标签内添加以下代码注册activity：
 ### 不注册activity无法使用，还未深入接触安卓原生，不明原因，后期可能会修改  
 <!--     注册activity-->  <br>
      <activity android:name="com.amap_flutter_tools.activity.EmulatorActivity"/
