@@ -33,6 +33,8 @@ platform-specific implementation code for Android and/or iOS.
 
 
 # 目前插件还未完善，example中只展示了导航功能，以后会更新
+## 导航示例
+![image](https://user-images.githubusercontent.com/118806874/210510535-691b893b-f24f-470a-b2bf-7adfc1b6b687.png)
 
 For help getting started with Flutter development, view the
 [online documentation](https://flutter.dev/docs), which offers tutorials, samples, guidance on
