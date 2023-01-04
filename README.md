@@ -31,8 +31,8 @@ platform-specific implementation code for Android and/or iOS.
      <activity android:name="com.amap_flutter_tools.activity.BaseActivity"/>
      <activity android:name="com.amap_flutter_tools.activity.CustomAmapRouteActivity"/>
 
-<br>
-#### 目前插件还未完善，example中只展示了导航功能，以后会更新
+
+# 目前插件还未完善，example中只展示了导航功能，以后会更新
 
 For help getting started with Flutter development, view the
 [online documentation](https://flutter.dev/docs), which offers tutorials, samples, guidance on
