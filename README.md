@@ -18,10 +18,10 @@ platform-specific implementation code for Android and/or iOS.
 ### github版引入项目
 
 ### 1、在flutter项目目录下的pubspec.yaml中添加以下代码: 
-     amap_flutter_tools:  <br>
+     amap_flutter_tools:  
      git:  
      url: https://github.com/1272416334/amap_flutter_tools  
-     ref: main  <br>
+     ref: main  
 ### 2、在项目目录下的android/app/build.gradle文件中的dependencies添加以下代码： 
 dependencies  
 {  
