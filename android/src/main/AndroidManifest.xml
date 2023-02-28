@@ -1,5 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.amap_flutter_tools.amap_flutter_tools">
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:allowNativeHeapPointerTagging="false"
+        >
+        <!--     注册activity-->
+        <activity android:name="com.amap_flutter_tools.activity.EmulatorActivity"/>
+        <activity android:name="com.amap_flutter_tools.activity.BaseActivity"/>
+        <activity android:name="com.amap_flutter_tools.activity.CustomAmapRouteActivity"/>
+    </application>
 </manifest>
 

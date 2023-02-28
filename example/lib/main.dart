@@ -1,13 +1,3 @@
-/*
- * @Description: 高德导航demo
- * @Author: dmlzj
- * @Github: https://github.com/dmlzj
- * @Email: 284832506@qq.com
- * @Date: 2021-01-28 17:28:23
- * @LastEditors: dmlzj
- * @LastEditTime: 2021-02-02 10:05:48
- * @如果有bug，那肯定不是我的锅，嘤嘤嘤
- */
 import 'package:amap_flutter_base/amap_flutter_base.dart';
 import 'package:amap_flutter_location/amap_flutter_location.dart';
 import 'package:flutter/material.dart';
@@ -104,11 +94,17 @@ class _MyAppState extends State<MyApp> {
                 AmapFlutterNavi.startNaviByEnd();
               }
             }),
-            item('从我的位置-测试地点', () async {
+            item('从我的位置-测试地点安卓', () async {
               if (await this.requestPermission()) {
                 LatLng toLatLng = LatLng(39.963175, 116.42669);
                 AmapFlutterNavi.startNaviByEnd(toLatLng, '测试地点');
               }
+            }),
+            item('ios-[getInfo]', () async {
+              print(await AmapFlutterNavi.runiOSMethod());
+            }),
+            item('从我的位置-测试地点IOS', () async {
+              await AmapFlutterNavi.runiOSMethod2();
             }),
           ],
         ),

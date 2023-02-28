@@ -4,17 +4,17 @@ version: 0.0.1
 homepage:
 
 environment:
-  sdk: '>=2.18.0 <3.0.0'
+  sdk: '>=2.17.0 <3.0.0'
   flutter: ">=2.5.0"
 
 dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
-  # 高德定位插件
-  amap_flutter_location: ^3.0.0
-  # 高德地图插件
-  amap_flutter_map: ^3.0.0
+#  # 高德定位插件
+#  amap_flutter_location: ^3.0.0
+#  # 高德地图插件
+#  amap_flutter_map: ^3.0.0
   # 权限插件
   permission_handler: ^6.1.1
   # 地图

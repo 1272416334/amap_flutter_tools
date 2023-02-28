@@ -1,6 +1,6 @@
 name: amap_flutter_tools
 description: a flutter amap plugin
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/1272416334/amap_flutter_tools
 
 environment:

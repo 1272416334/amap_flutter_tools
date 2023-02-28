@@ -9,10 +9,10 @@ class AMapFlutterLocation {
   static const String _CHANNEL_STREAM_LOCATION = "amap_flutter_location_stream";
 
   static const MethodChannel _methodChannel =
-      const MethodChannel(_CHANNEL_METHOD_LOCATION);
+      MethodChannel(_CHANNEL_METHOD_LOCATION);
 
   static const EventChannel _eventChannel =
-      const EventChannel(_CHANNEL_STREAM_LOCATION);
+      EventChannel(_CHANNEL_STREAM_LOCATION);
 
   static Stream<Map<String, Object>> _onLocationChanged = _eventChannel
       .receiveBroadcastStream()
@@ -150,6 +150,7 @@ class AMapFlutterLocation {
   /// [hasContains] 隐私声明中是否包含高德隐私政策说明<br>
   /// [hasShow] 隐私权政策是否弹窗展示告知用户<br>
   static void updatePrivacyShow(bool hasContains, bool hasShow) {
+    print('开始修改隐私合规1');
     _methodChannel
         .invokeMethod('updatePrivacyStatement', {'hasContains': hasContains, 'hasShow': hasShow});
   }
@@ -159,6 +160,7 @@ class AMapFlutterLocation {
   /// <b>必须保证在调用定位功能之前调用, 建议首次启动App时弹出《隐私政策》并取得用户同意</b><br>
   /// [hasAgree] 隐私权政策是否已经取得用户同意<br>
   static void updatePrivacyAgree(bool hasAgree) {
+    print('开始修改隐私合规2');
     _methodChannel
         .invokeMethod('updatePrivacyStatement', {'hasAgree': hasAgree});
   }

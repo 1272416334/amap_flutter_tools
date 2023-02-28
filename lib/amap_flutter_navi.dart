@@ -33,4 +33,31 @@ class AmapFlutterNavi {
   static Future init(String iosKey) async {
     await _channel.invokeMethod<dynamic>('init', {'iosKey': iosKey});
   }
+
+  static Future startNaviIos() async {
+    await _channel.invokeMethod<dynamic>('routePlanAction',
+        <String,dynamic>{});
+  }
+
+  //调用ios原生方法
+  static Future runiOSMethod() async {
+    const platform = MethodChannel('AmapTools');
+    var result;
+    try {
+      result = await platform.invokeMethod('getDevice');
+      return Future.value(result);
+    } on PlatformException catch (e) {
+      return Future.error(e.toString());
+    }
+  }
+
+  //调用ios原生方法
+  static Future<void> runiOSMethod2() async {
+    const platform = MethodChannel('AmapTools');
+    try {
+      await platform.invokeMethod('startNavi');
+    } on PlatformException catch (e) {
+      print('导航失败$e');
+    }
+  }
 }
