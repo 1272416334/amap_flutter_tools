@@ -48,7 +48,6 @@ flutter:
       android:
         package: com.amap_flutter_tools
         pluginClass: AmapFlutterNaviPlugin
-        #TODO IOS未实现
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
